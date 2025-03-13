@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Video Compressor & Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .faq-container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #f1f1f1;
+        }
+
+        /* FAQ Answer (Collapsible with Animation) */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+            padding: 0 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 800px; /* Large enough to show all formats */
+            padding: 10px;
+        }
+
+        .faq-question::after {
+            content: "▼";
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+        .faq-item.active .faq-question {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">1. What encoders are used in the app?</div>
+        <div class="faq-answer">
+            <p>The app currently supports two video encoders:</p>
+            <ul>
+                <li><strong>H.264 (AVC):</strong> A widely used video compression standard known for maintaining good quality while reducing file size.</li>
+                <li><strong>H.265 (HEVC - Beta Version):</strong> A more advanced compression method that provides better compression efficiency. However, since it's still in beta, results may be unstable or inaccurate.</li>
+            </ul>
+            <p>We are continuously working on improving H.265 support for better performance and accuracy.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">2. What features does this app have?</div>
+        <div class="faq-answer">
+            <p>The app offers the following features:</p>
+            <ul>
+                <li><strong>Video Compressor:</strong> Reduces the size of video files without compromising quality.</li>
+                <li><strong>Video Converter:</strong> Converts videos between different formats to meet your needs.</li>
+                <li><strong>Video Crop:</strong> Allows you to crop your videos to focus on a specific part of the frame.</li>
+                <li><strong>Video Trim:</strong> Enables you to trim unwanted sections from your video.</li>
+                <li><strong>Video Flip & Rotate:</strong> Lets you flip or rotate videos to adjust their orientation.</li>
+                <li><strong>Video to Music:</strong> Extracts audio from video files and saves it as a separate music file.</li>
+                <li><strong>Video to GIF:</strong> Converts video clips into animated GIFs.</li>
+                <li><strong>GIF to Video:</strong> Converts animated GIFs into video files.</li>
+                <li><strong>Audio Converter:</strong> Converts audio files between various formats.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">3. How do I compress a video?</div>
+        <div class="faq-answer">
+            <p>To compress a video using the app, follow these steps:</p>
+            <ol>
+                <li>Open the <b>Video Compressor - Converter</b> app on your device.</li>
+                <li>Tap on any feature & <b>Select Videos</b> that you want to compress.</li>
+                <li><b>Adjust</b> the compression <b>settings</b>, including video <b>resolution</b>, <b>bitrate</b>, and <b>output format</b>.</li>
+                <li>Tap on <b>Compress Video</b> and wait for the process to complete.</li>
+                <li>Once done, the compressed video is <b>automatically saved</b> or you can <b>share it directly</b>.</li>
+            </ol>
+            <p>The app ensures a balance between video quality and file size, making it an efficient solution for managing large videos.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">4. What video formats are supported?</div>
+        <div class="faq-answer">
+            <p>The app supports a variety of video formats, making it easier for users to compress and convert videos without compatibility issues. Here are the formats you can work with:</p>
+            <p><strong>Commonly Used Formats:</strong></p>
+            <ul>
+                <li><strong>MP4:</strong> The most widely used format.</li>
+                <li><strong>AVI:</strong> An older format with larger size.</li>
+                <li><strong>MKV:</strong> Supports multiple tracks, commonly used in movies.</li>
+                <li><strong>MOV:</strong> Developed by Apple, works on Android, macOS and iOS devices.</li>
+            </ul>
+            <p><strong>Other Supported Formats:</strong></p>
+            <ul>
+                <li><strong>WMV:</strong> A Windows-based format.</li>
+                <li><strong>FLV:</strong> Commonly used for online streaming.</li>
+                <li><strong>MPEG:</strong> Standard format for digital video and DVDs.</li>
+                <li><strong>WEBM:</strong> Optimized for web streaming with decent quality.</li>
+            </ul>
+            <p>You can easily convert videos between these formats based on your needs. If you're unsure which format to use, MP4 is generally the best choice for compatibility and quality.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">5. Does the app reduce video quality?</div>
+        <div class="faq-answer">
+            <p>By default, the app tries to maintain the best possible quality while reducing the file size. However, you have full control over compression settings. You can choose from different compression levels:</p>
+            <ul>
+                <li><strong>High Quality:</strong> Minimal compression, large file size, best quality.</li>
+                <li><strong>Balanced:</strong> Moderate compression, good quality, reduced size.</li>
+                <li><strong>Small File Size:</strong> Maximum compression, reduced quality, very small file size.</li>
+            </ul>
+            <p>This allows you to customize the output based on your storage needs and preference.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">6. Is the app free to use?</div>
+        <div class="faq-answer">
+            <p>The app is free to download and use, with basic features available at no cost. However, there are some premium features that we provide for free to use, such as:</p>
+            <ul>
+                <li>Ad-free experience.</li>
+                <li>Higher resolution output.</li>
+                <li>Faster video compression speed.</li>
+                <li>Batch processing for multiple videos at once.</li>
+            </ul>
+            <p>You can use the free version for basic compression and conversion, and also upgrade to the premium version for advanced features.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+            item.querySelector(".faq-question").addEventListener("click", function() {
+                faqItems.forEach(faq => {
+                    if (faq !== item) {
+                        faq.classList.remove("active");
+                    }
+                });
+                item.classList.toggle("active");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

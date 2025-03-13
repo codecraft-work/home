@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Image Compressor & Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .faq-container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #f1f1f1;
+        }
+
+        /* FAQ Answer (Collapsible with Animation) */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.3s ease-out;
+            padding: 0 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 800px; /* Large enough to show all formats */
+            padding: 10px;
+        }
+
+        .faq-question::after {
+            content: "▼";
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+        .faq-item.active .faq-question {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">1. What encoders are used in the app?</div>
+        <div class="faq-answer">
+            <p>The app currently supports two image encoders:</p>
+            <ul>
+                <li><strong>JPEG:</strong> A popular image format that balances quality and file size, making it ideal for web use and sharing.</li>
+                <li><strong>PNG:</strong> A lossless format that preserves image quality without compression artifacts, best suited for images requiring transparency.</li>
+                <li><strong>WEBP (Beta Version):</strong> A modern image format that provides better compression efficiency while maintaining high quality. It helps reduce file size even more compared to JPEG & PNG.</li>
+            </ul>
+            <p>We are continuously working on improving WEBP support for better performance and accuracy.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">2. What features does this app have?</div>
+        <div class="faq-answer">
+            <p>The app offers the following features:</p>
+            <ul>
+                <li><strong>Image Compressor:</strong> Reduces the size of image files without compromising quality.</li>
+                <li><strong>Image Converter:</strong> Converts images between different formats to meet your needs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">3. How do I compress a image?</div>
+        <div class="faq-answer">
+            <p>To compress a image using the app, follow these steps:</p>
+            <ol>
+                <li>Open the <b>Image Compressor - Converter</b> app on your device.</li>
+                <li>Tap on any feature & <b>Select Images</b> that you want to compress.</li>
+                <li><b>Adjust</b> the compression <b>settings</b>, including image <b>resolution (height/width)</b>, <b>rotation</b>, and <b>output format</b>.</li>
+                <li>Tap on <b>Compress Image</b> and wait for the process to complete.</li>
+                <li>Once done, the compressed image is <b>automatically saved</b> or you can <b>share it directly</b>.</li>
+            </ol>
+            <p>The app ensures a balance between image quality and file size, making it an efficient solution for managing large images.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">4. What image formats are supported?</div>
+        <div class="faq-answer">
+            <p>The app supports a variety of image formats, making it easier for users to compress and convert images without compatibility issues. Here are the formats you can work with:</p>
+            <p><strong>Commonly Used Formats:</strong></p>
+            <ul>
+                <li><strong>JPG/JPEG:</strong> The most widely used format, ideal for web and photography.</li>
+                <li><strong>PNG:</strong> Supports transparency, commonly used for graphics and web design.</li>
+                <li><strong>WEBP:</strong> A modern format with better compression and quality.</li>
+                <li><strong>GIF:</strong> Supports animation, often used for short clips and memes.</li>
+            </ul>
+            <p><strong>Other Supported Formats:</strong></p>
+            <ul>
+                <li><strong>BMP:</strong> Uncompressed format with high quality but larger file size.</li>
+                <li><strong>TIFF:</strong> Used for high-quality images and professional editing.</li>
+                <li><strong>HEIC:</strong> A newer format with better compression, mainly used by Apple devices.</li>
+                <li><strong>HEIF:</strong> A high-efficiency format that offers better quality at smaller file sizes.</li>
+            </ul>
+            <p>You can easily convert images between these formats based on your needs. If you're unsure which format to use, PNG is generally the best choice for compatibility and quality.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">5. Does the app reduce image quality?</div>
+        <div class="faq-answer">
+            <p>By default, the app tries to maintain the best possible quality while reducing the file size. However, you have full control over compression settings. You can choose from different compression levels:</p>
+            <ul>
+                <li><strong>High Quality:</strong> Minimal compression, large file size, best quality.</li>
+                <li><strong>Balanced:</strong> Moderate compression, good quality, reduced size.</li>
+                <li><strong>Small File Size:</strong> Maximum compression, reduced quality, very small file size.</li>
+            </ul>
+            <p>This allows you to customize the output based on your storage needs and preference.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">6. Is the app free to use?</div>
+        <div class="faq-answer">
+            <p>The app is free to download and use, with basic features available at no cost. However, there are some premium features that we provide for free to use, such as:</p>
+            <ul>
+                <li>Ad-free experience.</li>
+                <li>Higher resolution output.</li>
+                <li>Faster image compression speed.</li>
+                <li>Batch processing for multiple images at once.</li>
+            </ul>
+            <p>You can use the free version for basic compression and conversion, and also upgrade to the premium version for advanced features.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+            item.querySelector(".faq-question").addEventListener("click", function() {
+                faqItems.forEach(faq => {
+                    if (faq !== item) {
+                        faq.classList.remove("active");
+                    }
+                });
+                item.classList.toggle("active");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
